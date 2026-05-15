@@ -3,11 +3,11 @@ from datetime import datetime
 
 
 class CategoriaContas(Enum):
-    ENERGIA = 1
-    GAS = 2
-    ALUGUEL = 3
-    INTERNET = 4
-    RECARGA_CELULAR = 5
+    ENERGIA = "Energia"
+    GAS = "Gas"
+    ALUGUEL = "Aluguel"
+    INTERNET = "Internet"
+    RECARGA_CELULAR = "Recarga celular"
 
 
 class Despesas:
@@ -17,5 +17,7 @@ class Despesas:
         self.categoria = categoria
 
     def __str__(self):
-        return f"Descrição: {self.descricao} | Valor: {self.valor} | Categoria: {categoria.value}"  
+        return f"Descrição: {self.descricao} | Valor: {self.valor} | Categoria: {self.categoria.value}"  
+
+
 
