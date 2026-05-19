@@ -1,6 +1,8 @@
 from enum import Enum
 from datetime import datetime
-
+from dataclasses import dataclass
+from datetime import datetime
+import itertools
 
 class CategoriaContas(Enum):
     ENERGIA = "Energia"
@@ -10,14 +12,20 @@ class CategoriaContas(Enum):
     RECARGA_CELULAR = "Recarga celular"
 
 
+@dataclass
 class Despesas:
-    def __init__(self, descricao, valor, categoria: CategoriaContas):
-        self.descricao = descricao
-        self.valor = valor
-        self.categoria = categoria
+    _contador = itertools.count(start=1)
 
-    def __str__(self):
-        return f"Descrição: {self.descricao} | Valor: {self.valor} | Categoria: {self.categoria.value}"  
+    id: int = field(init=False)
+    descricao: str
+    valor: float
+    categoria: CategoriaContas
+    data: datetime
+
+    def __pos__init__(self):
+        self.id = next(self._contador)
+
+     
 
 
 
