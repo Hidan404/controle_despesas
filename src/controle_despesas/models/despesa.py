@@ -1,6 +1,6 @@
 from enum import Enum
 from datetime import datetime
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 import itertools
 
@@ -22,7 +22,7 @@ class Despesas:
     categoria: CategoriaContas
     data: datetime
 
-    def __pos__init__(self):
+    def __post_init__(self):
         self.id = next(self._contador)
 
      
