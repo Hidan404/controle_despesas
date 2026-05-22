@@ -41,14 +41,19 @@ class ContasSalvarArquivoJson:
             lista_dados = []
             for item in dados:
                 categoria_objeto = CategoriaContas(item["categoria"])
-                data_objeto = CategoriaContas(item["data"])
+                
+                
+                data_objeto = datetime.datetime.fromisoformat(item["data"])
 
                 despesa = Despesas(
-                    descricao= item["descricao"],
+                    descricao=item["descricao"],
                     valor=item["valor"],
                     categoria=categoria_objeto,
                     data=data_objeto
                 )
+
+                despesa.id = item["id"]
+                lista_dados.append(despesa)
 
                 despesa.id = item["id"]
 
