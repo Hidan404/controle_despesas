@@ -4,6 +4,20 @@
         "descricao": "Conta de gas",
         "valor": 199.9,
         "categoria": "Gas",
-        "data": "2026-05-29T23:00:29.167595"
+        "data": "2026-05-29T23:06:26.493519"
+    },
+    {
+        "id": 2,
+        "descricao": "Conta de gas",
+        "valor": 199.9,
+        "categoria": "Gas",
+        "data": "2026-05-29T23:06:39.011120"
+    },
+    {
+        "id": 3,
+        "descricao": "Conta de gas",
+        "valor": 199.9,
+        "categoria": "Gas",
+        "data": "2026-05-29T23:06:46.611555"
     }
 ]

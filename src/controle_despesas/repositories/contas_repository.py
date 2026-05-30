@@ -134,4 +134,4 @@ if __name__ == "__main__":
         print(f"ID: {d.id} | {d.descricao} | R$ {d.valor} | {d.categoria.name} | {d.data.strftime('%d/%m/%Y')}")
         
 
-    c.deletar_id_arquivo(2)    
+    #c.deletar_id_arquivo(2)    
