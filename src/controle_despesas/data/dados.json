@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "descricao": "Conta de Internet Fibra",
-        "valor": 99.9,
-        "categoria": "Internet",
-        "data": "2026-05-20T17:30:18.845999"
+        "descricao": "Conta de gas",
+        "valor": 199.9,
+        "categoria": "Gas",
+        "data": "2026-05-29T23:00:29.167595"
     }
 ]

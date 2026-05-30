@@ -14,16 +14,14 @@ class CategoriaContas(Enum):
 
 @dataclass
 class Despesas:
-    _contador = itertools.count(start=1)
-
-    id: int = field(init=False)
+   
+    
     descricao: str
     valor: float
     categoria: CategoriaContas
     data: datetime
+    id: int = 0
 
-    def __post_init__(self):
-        self.id = next(self._contador)
 
      
 
